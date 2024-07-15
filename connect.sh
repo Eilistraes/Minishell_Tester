@@ -87,6 +87,7 @@ test_commands()
         compare_output
         sleep 0.1
     done
+
     echo -e "${YELLOW}Running 'echo' tests...${NC}"
     execute_command_in_bash "mkdir test1 test2"
     sleep 0.5
@@ -103,6 +104,7 @@ test_commands()
     sleep 0.1
     execute_command_in_bash "cd .."
     execute_command_in_bash "rm -rf test1 test2"
+
     echo -e "${YELLOW}Running 'export' tests...${NC}"
     execute_command_in_bash "mkdir test1 test2"
     sleep 0.5
@@ -119,6 +121,7 @@ test_commands()
     sleep 0.1
     execute_command_in_bash "cd .."
     execute_command_in_bash "rm -rf test1 test2"
+
     echo -e "${YELLOW}Running 'redirect' tests...${NC}"
     execute_command_in_bash "mkdir test1 test2"
     sleep 0.5

@@ -4,7 +4,6 @@ echo 'hello world'
 echo 'hello' world
 echo $?
 echo $HOME
-echo $PWD
 echo $USER
 echo $SHELL
 echo "Date is:" $(date) | tee date_file | cut -d ' ' -f 1-3
